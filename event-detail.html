@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Details - EventHub</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-gray-50 font-['Inter',sans-serif] text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-primary-600 flex items-center">
+          <i class="fas fa-calendar-check mr-2"></i>
+          EventHub
+        </a>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="index.html" class="text-gray-600 hover:text-primary-600 font-medium">Events</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+      <div id="event-detail-container" class="min-h-[600px]">
+        <!-- Event details will be inserted here -->
+        <!-- Loading state will be shown initially -->
+        <div class="flex justify-center items-center p-12">
+          <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary-600"></div>
+        </div>
+      </div>
+    </main>
+
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-8 text-center">Attendees table</h2>
+      </div>
+    </section>
+    
+    <!-- Related Events Section -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-8 text-center">Other events from same city</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Placeholder for related events - would be populated by JavaScript in a real app -->
+          <div class="card group hover:scale-[1.02]">
+            <div class="relative overflow-hidden">
+              <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg" alt="Tech Conference" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold truncate">Tech Conference 2025</h3>
+              <div class="mt-2 flex items-center text-sm text-gray-600">
+                <span class="mr-3"><i class="fas fa-map-marker-alt mr-1"></i>San Francisco</span>
+                <span><i class="fas fa-calendar mr-1"></i>August 15, 2025</span>
+              </div>
+              <a href="#" class="btn btn-primary text-sm py-1.5 px-3 mt-3 inline-block">View Details</a>
+            </div>
+          </div>
+          
+          <div class="card group hover:scale-[1.02]">
+            <div class="relative overflow-hidden">
+              <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" alt="Music Festival" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold truncate">Summer Music Festival</h3>
+              <div class="mt-2 flex items-center text-sm text-gray-600">
+                <span class="mr-3"><i class="fas fa-map-marker-alt mr-1"></i>Austin</span>
+                <span><i class="fas fa-calendar mr-1"></i>July 10, 2025</span>
+              </div>
+              <a href="#" class="btn btn-primary text-sm py-1.5 px-3 mt-3 inline-block">View Details</a>
+            </div>
+          </div>
+          
+          <div class="card group hover:scale-[1.02]">
+            <div class="relative overflow-hidden">
+              <img src="https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg" alt="Art Exhibition" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold truncate">Modern Art Exhibition</h3>
+              <div class="mt-2 flex items-center text-sm text-gray-600">
+                <span class="mr-3"><i class="fas fa-map-marker-alt mr-1"></i>New York</span>
+                <span><i class="fas fa-calendar mr-1"></i>September 5, 2025</span>
+              </div>
+              <a href="#" class="btn btn-primary text-sm py-1.5 px-3 mt-3 inline-block">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
